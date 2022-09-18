@@ -8,7 +8,7 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
 
 - ### ```role_name```: [`create`](/ec2/create/)
 
-  Create a new EC2 Instance or Key depending on the ```role_action``` specified.&nbsp;  The valid values for ```role_action``` are ```instance``` and ```key```.&nbsp; The values for ```wait``` and ```assign_public_ip``` are ```true``` or ```false``` (other Ansible accepted values also work).&nbsp; The only state allowed for ```ec2_instance_state``` or ```ec2_key_state``` for this role is ```present```.
+  Create a new EC2 Instance or Key depending on the ```role_action``` specified.&nbsp;  The valid values for ```role_action``` are ```instance``` and ```key```.&nbsp; The values for ```wait``` and ```assign_public_ip``` are ```true``` or ```false``` (other Ansible accepted values also work).&nbsp; The only state allowed for ```ec2_instance_state``` or ```ec2_key_state``` for this role is ```present```.&nbsp; Specify ```tags``` as name a list of name/value pairs.
 
   &nbsp;
 
@@ -20,6 +20,7 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >    | Instance Type       | ```instance_type```       | yes      | role vars, extra_vars |
   >    | AMI Image           | ```image_name```          | no       | role vars, extra_vars |
   >    | Wait                | ```wait```                | yes      | role vars, extra_vars |
+  >    | Tags                | ```instance_tags```       | yes      | role vars, extra_vars |
   >    | Number of Instances | ```count```               | yes      | extra_vars            |
   >    | Region              | ```region```              | yes      | role vars, extra_vars |
   >    | VPC Subnet Id       | ```vpc_subnet_id```       | yes      | role vars, extra_vars |
