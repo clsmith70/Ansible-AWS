@@ -1,0 +1,13 @@
+- name: Create New Instance
+  amazon.aws.ec2:
+    key_name: "{{ key_name }}"
+    instance_type: "{{ instance_type }}"
+    image: "{{ image_name }}"
+    wait: "{{ wait }}"
+    group: "{{ instance_group }}"
+    count: "{{ count }}"
+    region: "{{ region }}"
+    vpc_subnet_id: "{{ vpc_subnet_id }}"
+    assign_public_ip: "{{ assign_public_ip }}"
+    state: "{{ ec2_instance_state }}"
+  when: "ec2_instance_state == 'present'"
