@@ -1,5 +1,6 @@
+- ansible.builtin.include_vars: instance.yml
+
 - name: Create New Instance
-  include_vars: instance.yml
   amazon.aws.ec2:
     key_name: "{{ key_name }}"
     instance_type: "{{ instance_type }}"
