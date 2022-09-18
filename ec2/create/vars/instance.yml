@@ -3,7 +3,7 @@ key_name: "ssh_key_name"
 instance_type: "t2.micro"
 image_name: "ami-23456"
 wait: yes
-region: east-us-1
+region: us-east-1
 vpc_subnet_id: "subnet-abcdef"
 assign_public_ip: no
 ec2_instance_state: present
