@@ -5,7 +5,7 @@
   amazon.aws.ec2_instance:
     key_name: "{{ key_name }}"
     instance_type: "{{ instance_type }}"
-    image: "{{ image_name }}"
+    image_id: "{{ image_name }}"
     wait: "{{ wait }}"
     group: "{{ instance_group }}"
     count: "{{ count }}"
