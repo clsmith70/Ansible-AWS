@@ -1,6 +1,7 @@
 - name: Rename an existing EC2 instance
   amazon.aws.ec2_instance:
     name: "{{ instance_name }}"
+    region: "{{ region }}"
     instance_ids:
       - "{{ instance_id }}"
     
