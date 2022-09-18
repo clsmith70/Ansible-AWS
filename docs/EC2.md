@@ -20,7 +20,6 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >    | Instance Type       | ```instance_type```       | yes      | role vars, extra_vars |
   >    | AMI Image           | ```image_name```          | no       | role vars, extra_vars |
   >    | Wait                | ```wait```                | yes      | role vars, extra_vars |
-  >    | Instance Group      | ```instance_group```      | yes      | extra_vars            |
   >    | Number of Instances | ```count```               | yes      | extra_vars            |
   >    | Region              | ```region```              | yes      | role vars, extra_vars |
   >    | VPC Subnet Id       | ```vpc_subnet_id```       | yes      | role vars, extra_vars |
