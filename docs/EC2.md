@@ -65,6 +65,22 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
 
   &nbsp;
 
+- ### ```role_name```: [`update`](/ec2/update/)
+
+  Rename an existing EC2 Instance.
+
+  &nbsp;
+
+  > #### update variables
+  >
+  >    | Description         | Variable name         | Required | Where specified       |
+  >    | ------------------- | --------------------- |:--------:| --------------------- |
+  >    | Instance Id         | ```instance_id```     | yes      | extra_vars            |
+  >    | Region              | ```region```          | yes      | role vars, extra_vars |
+  >    | Instance Name       | ```instance_name```   | yes      | extra_vars            |
+
+  &nbsp;
+
 - ### ```role_name```: [`power`](/ec2/power/)
 
   Set the power state of an EC2 instance depending on the value provided for ```ec2_instance_state```.&nbsp; The valid instance states are ```restarted```, ```running```, and ```stopped```.
