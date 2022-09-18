@@ -13,6 +13,6 @@
     network:
       assign_public_ip: "{{ assign_public_ip }}"
     tags:
-      "{{ tags | dict }}"
+      "{{ tags }}"
     state: "{{ ec2_instance_state }}"
   when: "ec2_instance_state == 'present'"
