@@ -1,4 +1,5 @@
-- ansible.builtin.include_vars: instance.yml
+- name: Import variables
+  ansible.builtin.include_vars: instance.yml
 
 - name: Create New Instance
   amazon.aws.ec2:
