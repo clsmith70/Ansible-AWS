@@ -1,5 +1,6 @@
 - name: EC2 Instance Power Operation
   amazon.aws.ec2_instance:
     instance_ids: "{{ instance_ids }}"
+    region: "{{ region }}"
     state: "{{ ec2_instance_state }}"
   when: "ec2_instance_state != 'present' and ec2_instance_state != 'absent'"
