@@ -1,3 +1,6 @@
+- name: Import variables
+  ansible.builtin.include_vars: instance.yml
+
 - name: Delete EC2 Instance
   amazon.aws.ec2_instance:
     instance_ids: "{{ instance_ids }}"

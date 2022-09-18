@@ -1,4 +1,5 @@
-- ansible.builtin.include_vars: key.yml
+- name: Import variables
+  ansible.builtin.include_vars: key.yml
 
 - name: Create EC2 Key with Specific Key Material
   no_log: true
