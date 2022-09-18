@@ -1,6 +1,5 @@
 - name: Delete EC2 Key
   amazon.aws.ec2_key:
     name: "{{ key_name }}"
-    region: "{{ region }}"
     state: "{{ ec2_key_state }}"
   when: "ec2_key_state == 'absent'"
