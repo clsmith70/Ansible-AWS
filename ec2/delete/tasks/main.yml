@@ -1,0 +1,7 @@
+- name: Delete EC2 Instance
+  import_tasks: manage_ec2_instance.yml
+  when: "role_action == 'instance'"
+
+- name: Delete EC2 Key
+  import_tasks: create_ec2_key.yml
+  when: "role_action == 'key'"
