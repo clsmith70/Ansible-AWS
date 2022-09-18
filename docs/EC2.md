@@ -33,11 +33,11 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >    | Description         | Variable name                      | Required | Where specified       |
   >    | ------------------- | ---------------------------------- |:--------:| --------------------- |
   >    | SSH Key Name        | ```key_name```                     | yes      | extra_vars            |
-  >    | Region              | ```region```                       | yes      | extra_vars            |
-  >    | Key Material        | ```key_material``` (rsa-ssh data)  | no       | role vars             |
+  >    | Region              | ```region```                       | yes      | role vars, extra_vars |
+  >    | Key Material        | ```key_material``` (rsa-ssh data)  | no       | extra_vars            |
   >    | Key State           | ```ec2_key_state```                | yes      | role vars, extra_vars |
   >  
-  > When ```key_material``` is not specified, the task returns the material of the new key and sets a fact containing the material of the new key.
+  > When ```key_material``` is not specified, the task returns the and sets a fact containing the material of the new key.
 
   &nbsp;
 
@@ -60,7 +60,6 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >    | Description         | Variable name              | Required | Where specified       |
   >    | ------------------- | -------------------------- |:--------:| --------------------- |
   >    | SSH Key Name        | ```key_name```             | yes      | extra_vars            |
-  >    | Region              | ```region```               | yes      | extra_vars            |
   >    | Key State           | ```ec2_key_state```        | yes      | role vars, extra_vars |
   >  
 
@@ -77,7 +76,7 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >    | Description         | Variable name              | Required | Where specified       |
   >    | ------------------- | -------------------------- |:--------:| --------------------- |
   >    | Instance Ids        | ```instance_ids```         | yes      | extra_vars            |
-  >    | Instance State      | ```ec2_instance_state```   | yes      | role vars, extra_vars |
+  >    | Instance State      | ```ec2_instance_state```   | yes      | extra_vars            |
 
   &nbsp;
 
