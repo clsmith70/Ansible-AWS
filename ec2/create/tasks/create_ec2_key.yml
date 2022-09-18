@@ -1,4 +1,5 @@
 - name: Create EC2 Key with Specific Key Material
+  include_vars: key.yml
   no_log: true
   amazon.aws.ec2_key:
     name: "{{ key_name }}"
