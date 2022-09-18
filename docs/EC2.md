@@ -16,6 +16,7 @@ This role is used to manage keys and instances in the Elastic Compute Cloud (EC2
   >
   >    | Description         | Variable name             | Required | Where specified       |
   >    | ------------------- | ------------------------- |:--------:| --------------------- |
+  >    | Instance Name       | ```instance_name```       | yes      | extra_vars            |
   >    | SSH Key Name        | ```key_name```            | yes      | role vars, extra_vars |
   >    | Instance Type       | ```instance_type```       | yes      | role vars, extra_vars |
   >    | AMI Image           | ```image_name```          | no       | role vars, extra_vars |
