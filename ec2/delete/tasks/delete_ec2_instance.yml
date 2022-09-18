@@ -1,5 +1,5 @@
 - name: Delete EC2 Instance
-  amazon.aws.ec2:
+  amazon.aws.ec2_instance:
     instance_ids: "{{ instance_ids }}"
     state: "{{ ec2_instance_state }}"
   when: "ec2_instance_state == 'absent'"
