@@ -1,3 +1,2 @@
 - name: Manage EC2 Instance Power State
   import_tasks: alter_ec2_instance_power_state.yml
-  when: "role_action == 'instance'"
